@@ -90,6 +90,10 @@ express.js-mercado-pago/
 │   ├── config.js
 │   ├── controllers/
 │   │   └── payment.controller.js
+│   ├── public/
+│   │   └── index.html
+│   ├── routes/
+│   │   └── payments.routes.js
 │   └── index.js
 ├── .gitignore
 ├── package.json
@@ -105,3 +109,7 @@ Si deseas contribuir a este proyecto, por favor sigue los siguientes pasos:
 3. Realiza tus cambios y haz commit (`git commit -am 'Agrega nueva funcionalidad'`).
 4. Haz push a la rama (`git push origin feature/nueva-funcionalidad`).
 5. Abre un Pull Request.
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
