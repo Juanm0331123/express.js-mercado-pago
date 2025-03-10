@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store</title>
+  </head>
+  <body>
+    <button id="checkout">Pay</button>
+    <script>
+      document
+        .getElementById("checkout")
+        .addEventListener("click", async () => {
+          const response = await fetch("/create-order", {
+            method: "POST",
+          });
+          const data = await response.json();
+          console.log(data);
+          if (data && data.data && data.data.init_point) {
+            window.location.href = data.data.init_point;
+          } else {
+            console.error("No se encontró init_point en la respuesta:", data);
+          }
+        });
+    </script>
+  </body>
+</html>
