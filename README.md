@@ -13,7 +13,7 @@ Este proyecto es una integración de Express.js con la API de Mercado Pago para 
 1. Clona este repositorio:
 
    ```sh
-   git clone https://github.com/tu-usuario/express.js-mercado-pago.git
+   git clone https://github.com/Juanm0331123/express.js-mercado-pago.git
    ```
 
 2. Navega al directorio del proyecto:
